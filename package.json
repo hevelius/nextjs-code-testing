@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "cypress open",
+    "server": "start-server-and-test dev 3000 test"
   },
   "dependencies": {
     "date-fns": "^2.22.0",
@@ -18,9 +20,11 @@
   },
   "devDependencies": {
     "classnames": "^2.3.1",
+    "cypress": "^7.4.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "sass": "^1.34.0",
+    "start-server-and-test": "^1.12.3",
     "tailwindcss": "^2.1.2"
   }
 }
